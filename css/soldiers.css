@@ -1,0 +1,213 @@
+@font-face {
+    font-family: Arvo; /* Гарнитура шрифта */
+    src: url("../fonts/arvo/arvo.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Playfair Display; /* Гарнитура шрифта */
+    src: url("../fonts/playfair_display/Playfairdisplayregular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Inter; /* Гарнитура шрифта */
+    src: url("../fonts/inter/Inter-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Bellota; /* Гарнитура шрифта */
+    src: url("../fonts/bellota/Bellota-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Tuffy; /* Гарнитура шрифта */
+    src: url("../fonts/tuffy/Tuffy.ttf"); /* Путь к файлу со шрифтом */
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0vw;
+}
+
+.page-content__title {
+    margin: 1vh auto auto auto;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: #3A405D;
+
+}
+
+.page-content__subtitle {
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #402E33;
+    margin-top: 1vh;
+    margin-left: 7vw;
+}
+
+.page-content__list-cards {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-cards__item {
+    margin-right: 5%;
+    margin-top: 3vh;
+}
+
+.soldier-card {
+    width: 16vw;
+    height: 46vh;
+    min-height: 325px;
+    min-width: 232px;
+}
+
+.soldier-card__image {
+    width: 16vw;
+    height: 30vh;
+    opacity: 0.9;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1vh;
+    height: 18vh;
+    margin-top: -1vh;
+    background: linear-gradient(180deg,
+    rgba(106, 52, 2, 0.6272) 70.83%, rgba(99, 47, 0, 0.7) 70.83%);
+}
+
+.card-info__name {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #FCFCFD;
+    margin-bottom: 1vh;
+}
+
+.card-info__description {
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: #FFFFFF;
+}
+
+.card-info__description:hover {
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.card-info__button {
+    border: 2px solid rgba(255, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(6px);
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    padding: 6px;
+}
+
+
+.page-content__controls {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+    background: rgba(163, 79, 2, 0.7);
+    margin-bottom: 2vw;
+}
+
+.page-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(99, 47, 0, 0.7);
+    height: 4vh;
+
+}
+
+.page-controls__button {
+    width: 10vw;
+    border: none;
+    border-radius: 4px;
+    background: #402E33;
+
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #FF553B;
+    margin: auto;
+}
+
+.button_active {
+    background: #FF553B;
+
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #402E33;
+}
+
+.name__controls {
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.16em;
+
+    color: #2B2224;
+    margin: auto auto auto auto;
+}

@@ -1,0 +1,44 @@
+.page-content-biography {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #AAA49D;
+    padding: 6vh 6vw;
+}
+.content-biography {
+    background: #F6E0B7;
+    padding: 2vh;
+    width: 58vw;
+}
+.content-biography__image-block {
+
+}
+.image-block__images {
+
+}
+.content-biography__text-block {
+    background: #FFEDDD;
+    border: 3px solid rgba(63, 41, 21, 0.36);
+    margin-top: 2vh;
+}
+.text-block__title {
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.text-block__text-info {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.57);
+    padding: 2vh;
+    margin: 1vh;
+}

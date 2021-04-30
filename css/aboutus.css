@@ -1,0 +1,65 @@
+.page-content-about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90vh;
+    min-height: 600px;
+}
+
+.page-content-about-us__text-block {
+    padding: 15vh 10vh 10vh 10vh;
+    width: 50vw;
+    min-width: 690px;
+    min-height: 600px;
+}
+
+.text-block__subtitle {
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FF553B;
+
+}
+
+.text-block__title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 86px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+
+}
+
+.title-black {
+    color: #121835;
+}
+
+.title-red {
+    color: #710808;
+}
+
+.text-block__description {
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    margin-top: 2vh;
+}
+
+.page-content-about-us__image-block {
+    min-width: 400px;
+    min-height: 600px;
+}
+
+.image-block__image-about {
+    background: url("../images/image-for-page-about.png") no-repeat center /100%;
+    min-width: 500px;
+    min-height: 600px;
+    height: 90vh;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="up-button flow-button">
+    <button id="arrowTop" class="arrow-up" onclick="up()" hidden></button>
+</div>
+<div class="page-header">
+    <div class="header-logo">
+        <a href="./index.html" class="header-logo__link header-link element-vertical-center">
+            <div class="header-logo__default"></div>
+        </a>
+    </div>
+    <div class="header-controls ">
+        <div class="controls-menu element-vertical-center">
+            <a href="./index.html" class="controls-menu__item_active header-link ">Главная</a>
+            <a href="./pages/soldiers.html" class="controls-menu__item header-link">Солдаты</a>
+            <a href="./pages/aboutUs.html" class="controls-menu__item header-link">О нас</a>
+        </div>
+        <div class="controls-login element-vertical-center">
+            <button class="controls-login__button-register element-center" onclick="window.location.href='./pages/registration.html'">Регистрация</button>
+            <button class="controls-login__button-login element-center" onclick="window.location.href='./pages/login.html'">Вход</button>
+        </div>
+    </div>
+</div>
+<div class="page-content content-landing scroll-block">
+    <div class="landing-page page-welcome">
+        <div class="page-welcome-left">
+            <div class="landing-page__subtitle">
+                Патриотический сайт
+            </div>
+            <div class="landing-page__title page-welcome-title-black">А нам нужна</div>
+            <div class="landing-page__title page-welcome-title-red">одна победа</div>
+            <div class="landing-page__description">
+                Востановим историю в деталях.
+                <br/>
+                Раскажи нам о своиз родных которые защищали странну.
+            </div>
+            <div class="landing-page__button">
+                <button class="page-welcome__button">Рассказать историю...</button>
+            </div>
+        </div>
+        <div class="page-welcome-right">
+            <div class="landing-page__image welcome-image"></div>
+        </div>
+    </div>
+    <div class="landing-page page-memories">
+        <div class="page-memories__card">
+            <div class="card-memories element-center">
+                <div class="card-memories__title">Память о солдатах</div>
+                <div class="card-memories__subtitle">Фото тех кто никогда не будет забыт...</div>
+                <button class="card-memories__button" onclick="window.location.href='./pages/soldiers.html'">Смотреть</button>
+            </div>
+        </div>
+    </div>
+    <div class="landing-page page-about-technic">
+        <button class="page-about-technic__button">Подробнее о технике СССР...</button>
+    </div>
+    <div class="landing-page page-about-memorials">
+        <div class="page-about-memorials-title">
+            О памятниках
+        </div>
+        <div class="page-about-memorials-description">
+            тексттексттексттексттексттексттексттексттекстvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+            vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+            vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+            vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+        </div>
+        <div class="carousel-memories">
+            <div class="carousel-controls">
+                <button id="buttonLeft" class="carousel-controls__button carousel-button" onclick="moveCarouselToLeft()" disabled>
+                    <img class="arrow__image" src="images/arrow-left.png" alt="arrow-left">
+                </button>
+                <button id="buttonRight" class="carousel-controls__button carousel-button " onclick="moveCarouselToRight()">
+                    <img class="arrow__image" src="images/arrow-right.png" alt="arrow-right">
+                </button>
+            </div>
+            <div id="listCards" class="carousel-list-items">
+                <div class="carousel-item">
+                    <div class="card-memorial">
+                        <img src="images/cards-memorial/some-memorila1.png" alt="image-card"
+                             class="card-memorial__image">
+                        <div class="card-memorial__title cutting_text">Название памятника 1</div>
+                        <div class="card-memorial__subtitle cutting_text">Местоположение памятника</div>
+                        <div class="card-memorial__author cutting_text">Автор: Фамилия Имя Отчестово</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-memorial">
+                        <img src="images/cards-memorial/some-memorila1.png" alt="image-card"
+                             class="card-memorial__image">
+                        <div class="card-memorial__title cutting_text">Название памятника 2</div>
+                        <div class="card-memorial__subtitle cutting_text">Местоположение памятника</div>
+                        <div class="card-memorial__author cutting_text">Автор: Фамилия Имя Отчестово</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-memorial">
+                        <img src="images/cards-memorial/some-memorila1.png" alt="image-card"
+                             class="card-memorial__image">
+                        <div class="card-memorial__title cutting_text">Название памятника 3</div>
+                        <div class="card-memorial__subtitle cutting_text">Местоположение памятника</div>
+                        <div class="card-memorial__author cutting_text">Автор: Фамилия Имя Отчестово</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-memorial">
+                        <img src="images/cards-memorial/some-memorila1.png" alt="image-card"
+                             class="card-memorial__image">
+                        <div class="card-memorial__title cutting_text">Название памятника 4</div>
+                        <div class="card-memorial__subtitle cutting_text">Местоположение памятника</div>
+                        <div class="card-memorial__author cutting_text">Автор: Фамилия Имя Отчестово</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-memorial">
+                        <img src="images/cards-memorial/some-memorila1.png" alt="image-card"
+                             class="card-memorial__image">
+                        <div class="card-memorial__title cutting_text">Название памятника 5</div>
+                        <div class="card-memorial__subtitle cutting_text">Местоположение памятника</div>
+                        <div class="card-memorial__author cutting_text">Автор: Фамилия Имя Отчестово</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-memorial">
+                        <img src="images/cards-memorial/some-memorila1.png" alt="image-card"
+                             class="card-memorial__image">
+                        <div class="card-memorial__title cutting_text">Название памятника 6</div>
+                        <div class="card-memorial__subtitle cutting_text">Местоположение памятника</div>
+                        <div class="card-memorial__author cutting_text">Автор: Фамилия Имя Отчестово</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-memorial">
+                        <img src="images/cards-memorial/some-memorila1.png" alt="image-card"
+                             class="card-memorial__image">
+                        <div class="card-memorial__title cutting_text">Название памятника 7</div>
+                        <div class="card-memorial__subtitle cutting_text">Местоположение памятника</div>
+                        <div class="card-memorial__author cutting_text">Автор: Фамилия Имя Отчестово</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-memorial">
+                        <img src="images/cards-memorial/some-memorila1.png" alt="image-card"
+                             class="card-memorial__image">
+                        <div class="card-memorial__title cutting_text">Название памятника 8</div>
+                        <div class="card-memorial__subtitle cutting_text">Местоположение памятника</div>
+                        <div class="card-memorial__author cutting_text">Автор: Фамилия Имя Отчестово</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-footer">
+    <div class="page-footer__logo">
+        <a href="#" class="footer-logo__link footer-link ">
+            <div class="footer-logo__default"></div>
+        </a>
+    </div>
+    <div class="page-footer__copyright ">Работягин Алексей © - 2021</div>
+    <div class="page-footer__contacts ">
+        <div class="title-block">Контакты</div>
+        <div class="field-block">Почта: Aleks-r02@mail.ru</div>
+        <div class="field-block">Телефон : + 7 (927) 555-34-43</div>
+    </div>
+</div>
+</body>
+</html>
